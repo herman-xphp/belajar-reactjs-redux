@@ -4,8 +4,11 @@ import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router";
+import { configureStore } from "@reduxjs/toolkit";
 
-const store = null;
+const store = configureStore({
+  reducer: {},
+});
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
